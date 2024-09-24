@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstati.com">
+    <link href="https://fonts.googlelapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> Digital Clock </title>
+</head>
+<body>
+    <section class="container">
+        <div id="clock"></div>
+        <input onchange="setAlarmTime(this.value)" name="AlarmTime" type="datetime-local">
+        <div class="controls">
+            <button onclick="setAlarm()" class="green" class="button set-time"> Set Alarm</button>
+            <button onclick="clearAlarm()" class="red" class="button clear-alarm"> Clear Alarm </button>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

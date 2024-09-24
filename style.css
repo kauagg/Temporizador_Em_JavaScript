@@ -1,0 +1,90 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#clock {
+   font-family: 'Orbitron', sans-serif;
+   font-size: 15vw;
+   background-image: linear-gradient(180deg, rgb(253, 104, 99) 0%,
+   rgb(238, 255, 1) 50%,
+   rgb(1, 192, 255) 100%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -moz-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-text-fill-color: transparent;
+}
+.controls{
+    margin-top: 16px;
+}
+.uuton{
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 4px 8px;
+    margin-left: 4px
+} 
+.red{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 14px;
+    background-color: red;
+    width: 109px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: red;
+    font-size: 16px;
+}
+button:hover{
+    transition: ease-in 12s;
+}
+
+.green{
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 14px;
+    background-color: green;
+    max-width: 100px;
+    width: 100px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    box-shadow: green;
+    font-size: 16px;
+}
+input {
+    width: 300px; 
+    height: 40px; 
+    background-color: #333; 
+    color: #fff; 
+    border: none; 
+    border-radius: 8px; 
+    padding: 10px 15px; 
+    font-size: 16px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    outline: none; 
+    transition: box-shadow 0.3s ease, background-color 0.3s ease; 
+}
+
+input:focus {
+    background-color: #444; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4); 
+}
+gree:focus{
+    background-color: #00ff6a; 
+    box-shadow: 0 4px 12px rgb(21, 255, 0); 
+}
+

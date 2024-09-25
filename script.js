@@ -59,5 +59,11 @@ function clearAlarm() {
         alert('No alarm to clear');
     }
 }
+function testAudio() {
+    audio.play().catch(error => {
+        console.error('Erro ao tocar o áudio:', error);
+    });
+}
+
 
 setInterval(updateTime, 1000);
